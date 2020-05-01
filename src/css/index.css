@@ -9,6 +9,31 @@ body {
     background-position: center center;
     background-image: url(http://www.firefly-burgers.com/wp-content/uploads/2018/12/background1-3.jpg);
 }
+
+
+
+/* ::-webkit-scrollbar {
+  height: 4px;              
+  width: 4px;               
+  border: 1px solid red;
+} */
+::-webkit-scrollbar {
+  height: 6px;
+  width: 4px;
+  background: gray;
+  margin-top: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: red;
+  /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  background-color: red;
+}
+
 .mt-5{
   margin-top: 6% !important;
 }
@@ -186,3 +211,69 @@ body {
 .flip-card-back p{
   margin-top: 40%;
 }
+
+/* float animation */
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.logo_class:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.section2-logo:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.float-anim {
+  overflow: hidden;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+}
+
+
+
