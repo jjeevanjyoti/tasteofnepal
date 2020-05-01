@@ -31,7 +31,6 @@ body {
 	transition : all 0.3s ease-out;
 }
 .navigation-wrap{
-	position: fixed;
   width: 100%;
 	top: 0;
 	left: 0;
@@ -91,7 +90,7 @@ body {
 	border-color: transparent;
 }
 .nav-link{
-	color: #212121 !important;
+	color: #fff !important;
 	font-weight: 500;
     transition: all 200ms linear;
 }
