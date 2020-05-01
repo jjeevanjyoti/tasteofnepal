@@ -32,7 +32,7 @@ body {
   background-color: red;
 }
 .nav-link{
-  font-size: 30px;
+  font-size: 34px;
 }
 
 .mt-5{
@@ -61,14 +61,16 @@ body {
     font-size: 34px;
     margin-top: 4%;
     background-image: url('../image/slate2.png');
-    background-position: 50% -60%;;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: auto;
     width: 100%;
   }
-  .w-100{
-      height: 800px;
+
+  div#navbar-list-2{
+    padding: 1%;
   }
+ 
   
   .logo_class{
     margin-top: -25%;
