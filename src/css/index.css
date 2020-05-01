@@ -10,8 +10,6 @@ body {
     background-image: url(http://www.firefly-burgers.com/wp-content/uploads/2018/12/background1-3.jpg);
 }
 
-
-
 /* ::-webkit-scrollbar {
   height: 4px;              
   width: 4px;               
@@ -32,6 +30,9 @@ body {
 ::-webkit-scrollbar {
   width: 6px !important;
   background-color: red;
+}
+.nav-link{
+  font-size: 30px;
 }
 
 .mt-5{
@@ -60,7 +61,7 @@ body {
     font-size: 34px;
     margin-top: 4%;
     background-image: url('../image/slate2.png');
-    background-position: 50% -100%;;
+    background-position: 50% -60%;;
     background-repeat: no-repeat;
     background-size: auto;
     width: 100%;
