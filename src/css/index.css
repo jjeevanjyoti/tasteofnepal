@@ -213,6 +213,17 @@ body {
   margin-top: 40%;
 }
 
+
+.element-title{
+  font-family: "Cabin Sketch", Sans-serif;
+  font-size: 49px;
+  color: #fff;
+  
+}
+.element-desc{
+  color: #bababa;
+}
+
 /* float animation */
 @-webkit-keyframes float {
   0% {
@@ -275,6 +286,7 @@ body {
   -webkit-animation: float 6s ease-in-out infinite;
           animation: float 6s ease-in-out infinite;
 }
+
 
 
 
