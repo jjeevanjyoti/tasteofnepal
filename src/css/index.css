@@ -16,7 +16,9 @@ body {
 
 /* #Navigation
 ================================================== */
-
+.ml-10{
+  margin-left: 10%;
+}
 .start-header {
 	opacity: 1;
 	transform: translateY(0);
@@ -43,16 +45,15 @@ body {
 	-webkit-transition : all 0.3s ease-out;
   transition : all 0.3s ease-out;
   position: fixed;
-  height: 12vh;
 }
 .tasteofnepal{
-  height: 88vh;
+  margin-top: 7%;
 }
 .navbar{
 	padding: 0;
 }
 .navbar-brand img{
-	height: 100px;
+	height: 134px;
 	width: auto;
 	display: block;
 	-webkit-transition : all 0.3s ease-out;
@@ -287,6 +288,8 @@ body {
 .story-img{
   width: 100%;
 }
+
+
 
 
 
@@ -871,4 +874,78 @@ display: block;
     color: #fff;
     bottom: 10px;
     right: 15px;
+}
+
+.imglist img{
+    width:  200px;
+    height: 200px;
+    
+}
+
+.imglist{
+  text-align: center;
+}
+
+.gallery-section h3{
+color: #fff;
+}
+
+.carousel {
+  background: #EEE;
+}
+.home-section-carousel .flickity-viewport{
+  height: 1000px !important;
+}
+.carousel-cell img{
+  height: 1000px;
+    width: 100%;
+    ;
+}
+.carousel-cell {
+  width: 100%;
+  height: 800px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+/* rolling scroll */
+.marquee-div{
+  background-color: #9c1e1e;
+  height: 15px;
+}
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+  color: yellow;
+}
+
+.marquee2 span {
+  animation-delay: 5s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
