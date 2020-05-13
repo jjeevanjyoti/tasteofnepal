@@ -20,6 +20,9 @@ body {
 .ml-10{
   margin-left: 10%;
 }
+.mz-auto{
+  margin: 0 auto;
+}
 .start-header {
 	opacity: 1;
 	transform: translateY(0);
@@ -48,17 +51,20 @@ body {
   position: fixed;
 }
 .tasteofnepal{
-  margin-top: 7%;
+  margin-top: 6%;
 }
 .navbar{
 	padding: 0;
 }
 .navbar-brand img{
-	height: 134px;
-	width: auto;
-	display: block;
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
+  height: 190px;
+  /* width: auto; */
+  display: block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  top: -28px;
+  left: -15%;
 }
 .navbar-toggler {
 	float: right;
@@ -166,11 +172,14 @@ body {
   background-color: red;
 }
 .nav-link{
-  font-size: 34px;
+  font-size: 24px;
 }
 
 .mt-5{
   margin-top: 6% !important;
+}
+.mr-15{
+margin-right: -15%;
 }
 .p-6{
   padding: 6%;
@@ -558,7 +567,7 @@ body {
 
 
 .footer-distributed{
-	background: var(--main-color);
+	background: #1f1c1c;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -895,16 +904,15 @@ color: #fff;
   background: #EEE;
 }
 .home-section-carousel .flickity-viewport{
-  height: 1000px !important;
+  height: 850px !important;
 }
 .carousel-cell img{
-  height: 1000px;
-    width: 100%;
-    ;
+  height: 850px;
+  width: 100%;
 }
 .carousel-cell {
   width: 100%;
-  height: 800px;
+  height: 850px;
   margin-right: 10px;
   border-radius: 5px;
 }
@@ -920,33 +928,46 @@ color: #fff;
 
 
 /* rolling scroll */
-.marquee-div{
-  background-color: #9c1e1e;
-  height: 15px;
-}
-.marquee {
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute;
-}
 
-.marquee span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 10s linear infinite;
+.headers h2 {
+  font-family: 'Monoton', cursive;
+  font-size: 20px;
   color: yellow;
+  -webkit-animation: h2 0.35s infinite; 
+  animation: h2 0.35s infinite;
+}
+.ptp-2{
+  padding-top: 2%;
+}
+@-webkit-keyframes  h2 {
+    0%   {text-shadow: 0 0 6px #FFF;}
+    100%  {text-shadow: 0 0 0px #000;}
 }
 
-.marquee2 span {
-  animation-delay: 5s;
+
+@keyframes h2 {
+    0%   {text-shadow: 0 0 6px #FFF;}
+    100%  {text-shadow: 0 0 0px #000;}
 }
 
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
+.rolling{
+  color: #16e616;
+}
+
+.map-icon{
+  font-size: 50px;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.location-ptag{
+  font-size: 20px;
+  color: #ff9100;
+}
+.ph-no{
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  color: yellow;
+  margin-top: 2px;
 }
