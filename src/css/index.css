@@ -20,6 +20,9 @@ body {
 .ml-10{
   margin-left: 10%;
 }
+.mrp-5{
+  margin-right: 2%;
+}
 .mz-auto{
   margin: 0 auto;
 }
@@ -57,14 +60,14 @@ body {
 	padding: 0;
 }
 .navbar-brand img{
-  height: 190px;
+  height: 162px;
   /* width: auto; */
   display: block;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   position: absolute;
   top: -28px;
-  left: -15%;
+  left: -8%;
 }
 .navbar-toggler {
 	float: right;
@@ -172,7 +175,7 @@ body {
   background-color: red;
 }
 .nav-link{
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .mt-5{
