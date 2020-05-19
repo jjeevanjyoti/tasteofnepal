@@ -942,6 +942,10 @@ color: #fff;
 .ptp-2{
   padding-top: 2%;
 }
+.ptp-5{
+  padding-top: 5%;
+
+}
 @-webkit-keyframes  h2 {
     0%   {text-shadow: 0 0 6px #FFF;}
     100%  {text-shadow: 0 0 0px #000;}
