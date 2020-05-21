@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://codepen.io/fancyapps/pen/Kxdwjj">
   <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
 </head>
 
 
@@ -186,7 +189,7 @@
             <h2>About
               <span>Us</span></h2>
             <p>Taste of Nepal is a dynamic multi cuisine restaurant which serves Authentic Nepali cuisine,
-              America,<br>
+              American,<br>
               Italian, Indian, Chinese cuisine with Bar concepts. It is family owned enterprise with a consistent
               record<br>
               of growth internationally with other business. The Taste of Nepal is pioneering force in brand
@@ -225,7 +228,7 @@
                 </div>
                 <div class="col-md-6">
                   <h4>
-                    <i class="far fa-star"></i>America cuisine</h4>
+                    <i class="far fa-star"></i>American cuisine</h4>
                 </div>
                 <div class="col-md-6">
                   <h4>
@@ -316,7 +319,7 @@
                 alt="First slide">
             </div>
             <div class="gallery-cell">
-              <img class="d-block story-img" src="./src/image/indian menu/nonveg-stater/Galouti Kabab.jpg"
+              <img class="d-block story-img"  src="./src/image/indian menu/nonveg-stater/Tandoori Murgh.jpg"
                 alt="First slide">
               <img class="d-block story-img" src="./src/image/indian menu/nonveg-stater/Jhinga Anari.jpg"
                 alt="First slide">
@@ -1146,7 +1149,7 @@
               <img src="./src/image/indian menu/nonveg-stater/Chicken Tikka.jpg"  />
             </a>
             <a href="./src/image/indian menu/nonveg-stater/Galouti Kabab.jpg" data-fancybox data-caption="&lt;b&gt;Taste of Nepal&lt;/b&gt;&lt;br /&gt;the multi cuisine &lt;em&gt;&lt;/em&gt; Concept">
-              <img src="./src/image/indian menu/nonveg-stater/Galouti Kabab.jpg"  />
+              <img  src="./src/image/indian menu/nonveg-stater/Tandoori Murgh.jpg"  />
             </a>
             <a href="./src/image/indian menu/nonveg-stater/Jerry Merry Chicken.jpg" data-fancybox data-caption="&lt;b&gt;Taste of Nepal&lt;/b&gt;&lt;br /&gt;the multi cuisine &lt;em&gt;&lt;/em&gt; Concept">
               <img src="./src/image/indian menu/nonveg-stater/Jerry Merry Chicken.jpg"  />
@@ -1239,12 +1242,11 @@
         <div class="heading text-center">
           <h2>Contact
             <span> Us </span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            <br>incididunt ut labore et dolore magna aliqua.</p>
+          <p>
+            <br></p>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <form>
               <div class="row">
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="name" placeholder="Name">
@@ -1259,8 +1261,7 @@
               <div class="form-group">
                 <textarea class="form-control" rows="5" id="description" placeholder="Message"></textarea>
               </div>
-              <button class="btn btn-block" type="submit">Send Now!</button>
-            </form>
+              <button class="btn btn-block" type="submit" onclick="submitReport()">Send Now!</button>
           </div>
         </div>
       </div>
@@ -1308,7 +1309,7 @@
 
       <p class="footer-company-about">
         <span> Taste of Nepal </span>
-       is a dynamic multi cuisine restaurant which serves Authentic Nepali cuisine, America,
+       is a dynamic multi cuisine restaurant which serves Authentic Nepali cuisine, American,
         Italian, Indian, Chinese cuisine with Bar concepts. It is family owned enterprise with a consistent record
         of growth internationally with other business.
       </p>
@@ -1437,17 +1438,24 @@
           .val()
           .trim();
         var description = $('#description')
+        console.log(name);
+        console.log(subject);
+        console.log(email);
+        console.log(description);
+
+        
         const body = `<div>
                       <p>Name: ${name}</p>
-                      <p>Subject: ${title}</p>
+                      <p>Subject: ${subject}</p>
+                      <p>Email: ${email}</p>
                       <p>Description: ${description}</p>
                     </div>`;
         var data = {
           Host: 'smtp.sendgrid.com',
-          Username: 'mediadata245',
-          Password: 'mediadata245123',
-          To: 'tasteofnepal@gmail.com',
-          From: email,
+          Username: 'Tasteofnepal',
+          Password: 'Pravat@1234567',
+          To: 'tastenepal@gmail.com',
+          From: 'tastenepal@gmail.com'  ,
           Subject: subject,
           Body: body
         };
